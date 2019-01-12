@@ -12,8 +12,7 @@
         </output>
 
         <context if="empty($UserName)" id="name">
-            <output value="Привет! Меня зовут яндекс! А это - демонстрация моего навыка, созданного с помощью платформы zenbot. Как тебя зовут?"/>
-
+            <output value="Привет! Меня зовут Дом! А это демонстрация приложения Романычева Романа
             <input pattern="$Text">
                 <var name="UserName" value="cap($Text)" scope="user"/>
                 <output value="Приятно познакомиться, $UserName! Напиши мне что-нибудь."/>
