@@ -28,7 +28,7 @@
      </input>
     <input pattern="* температура в доме *">
         <var name="end_session" value="javascript: true"/>
-        <get url="https://allhost.dlinkddns.com/dom/2.php" var="temp">
+        <get url="http://allhost.dlinkddns.com/dom/2.php" var="temp">
             </get>
           <output value="$temp"/>
         <output value="Выполнено, $UserName!"/>
