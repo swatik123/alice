@@ -12,7 +12,7 @@
         </output>
 
         <context if="empty($UserName)" id="name">
-            <output value="Привет! Меня зовут Дом! А Вас? А это демонстрация приложения от Романычева Романа">
+            <output value="Привет! Меня зовут Дом! А Вас? А это демонстрация приложения от Романычева Романа"/>
             <input pattern="$Text">
                 <var name="UserName" value="cap($Text)" scope="user"/>
                 <output value="Приятно познакомиться, $UserName! Напиши мне что-нибудь."/>
