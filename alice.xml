@@ -20,7 +20,11 @@
             </input>
         </context>
     </input>
-
+<input pattern="* включить телевизор в зале *">
+        <var name="end_session" value="javascript: true"/>
+        <get url="https://maker.ifttt.com/trigger/one_one/with/key/dLk5IwLsMXegxiqFYVwYACU--EG1SBHi_I-7py1d4DY">
+        <output value="Выполнено, $UserName!"/>
+    </input>
     <input pattern="* пока *">
         <var name="end_session" value="javascript: true"/>
         <output value="Ну пока, незнакомец!" if="empty($UserName)"/>
