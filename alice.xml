@@ -2,6 +2,7 @@
 
     <sample>
         <item value="Помощь"/>
+        <item value="Привет"/>
     </sample>
 <input pattern="*">
         <var name="end_session" value="javascript: true"/>
