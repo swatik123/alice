@@ -1,13 +1,17 @@
 <context>
 
     <sample>
-        <item value="Кто такая Алиса"/>
-        <item value="Что такое бот"/>
+        <item value="Помощь"/>
     </sample>
 <input pattern="*">
         <var name="end_session" value="javascript: true"/>
         
         <output value="Задай правильный вопрос мне $UserName!"/>
+     </input>
+    <input pattern="* помощь *">
+        <var name="end_session" value="javascript: true"/>
+        
+        <output value="Чем помочь вам $UserName? Данные команды требуются только для хозяина проекта"/>
      </input>
     <input pattern="* (привет*|здравствуй*) *">
         <output if="full($UserName)">
