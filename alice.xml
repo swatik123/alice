@@ -11,7 +11,7 @@
     <input pattern="* помощь *">
         <var name="end_session" value="javascript: true"/>
         
-        <output value="Чем помочь вам $UserName? Данные команды требуются только для хозяина проекта, для управления домом"/>
+        <output value="Чем помочь вам $UserName? Данные команды требуются только для хозяина проекта, для управления домом!"/>
      </input>
     <input pattern="* (привет*|здравствуй*) *">
         <output if="full($UserName)">
