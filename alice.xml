@@ -34,6 +34,18 @@
             </get>
         <output value="Выполнено, $UserName!"/>
      </input>
+    <input pattern="* включить свет в зале *">
+       <var name="end_session" value="javascript: true"/>
+        <get url="https://maker.ifttt.com/trigger/zal_on/with/key/dLk5IwLsMXegxiqFYVwYACU--EG1SBHi_I-7py1d4DY">
+            </get>
+        <output value="Выполнено, $UserName!"/>
+     </input>
+    <input pattern="* выключить свет в зале *">
+        <var name="end_session" value="javascript: true"/>
+        <get url="https://maker.ifttt.com/trigger/zal_off/with/key/dLk5IwLsMXegxiqFYVwYACU--EG1SBHi_I-7py1d4DY">
+            </get>
+        <output value="Выполнено, $UserName!"/>
+     </input>
     <input pattern="* температура в доме *">
         <var name="end_session" value="javascript: true"/>
         <get url="http://allhost.dlinkddns.com/dom/2.php" var="temp">
