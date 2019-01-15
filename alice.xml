@@ -22,8 +22,8 @@
      </input>
     <input pattern="* (привет*|здравствуй*) *">
         <output if="full($UserName)">
-            <item value="Привет, $UserName! Рада снова видеть тебя!"/>
-            <item value="Здравствуй, $UserName! Я уже успела соскучиться..."/>
+            <item value="Привет, $UserName! Рада снова видеть тебя! Вы так же можете управлять домом"/>
+            <item value="Здравствуй, $UserName! Я уже успела соскучиться...И жду вашей команды."/>
         </output>
 
         <context if="empty($UserName)" id="name">
