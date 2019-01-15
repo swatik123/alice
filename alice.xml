@@ -3,6 +3,7 @@
     <sample>
         <item value="Помощь"/>
         <item value="Привет"/>
+           <item value="Что ты умеешь"/>
     </sample>
 <input pattern="*">
         <var name="end_session" value="javascript: true"/>
@@ -10,6 +11,11 @@
         <output value="Задай правильный вопрос мне $UserName!"/>
      </input>
     <input pattern="* помощь *">
+        <var name="end_session" value="javascript: true"/>
+        
+        <output value="Чем помочь вам $UserName? Данные команды требуются только для хозяина проекта, для управления домом!"/>
+     </input>
+    <input pattern="* что ты умеешь *">
         <var name="end_session" value="javascript: true"/>
         
         <output value="Чем помочь вам $UserName? Данные команды требуются только для хозяина проекта, для управления домом!"/>
